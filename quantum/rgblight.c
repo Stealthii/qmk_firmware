@@ -435,6 +435,7 @@ void adjust_current(void) {
     }
 }
 
+#ifndef RGBLIGHT_CUSTOM_DRIVER
 __attribute__ ((weak))
 void rgblight_set(void) {
     
@@ -465,6 +466,7 @@ void rgblight_set(void) {
     #endif
   }
 }
+#endif
 
 #ifdef RGBLIGHT_ANIMATIONS
 
